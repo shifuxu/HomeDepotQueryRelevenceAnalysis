@@ -3,13 +3,13 @@ import pandas as pd
 
 def readFiles():
     #randomly selected about 80% of the training data from train.csv
-    subTrainSet = pd.read_csv('../../myDataset/subTrainSet.csv', encoding="ISO-8859-1")
+    subTrainSet = pd.read_csv('subTrainSet.csv', encoding="ISO-8859-1")
     #randomly selected about 20% of the training data from train.csv
-    developmentTestSet = pd.read_csv('../../myDataset/developmentTestSet.csv', encoding="ISO-8859-1")
+    developmentTestSet = pd.read_csv('developmentTestSet.csv', encoding="ISO-8859-1")
 
     #read the preprocessed features from file
-    product_description_tfidf = pd.read_csv('../../myDataset/product_description_tfidf.csv')
-    product_title_tfidf = pd.read_csv('../../myDataset/product_title_tfidf.csv')
+    product_description_tfidf = pd.read_csv('product_description_tfidf.csv')
+    product_title_tfidf = pd.read_csv('product_title_tfidf.csv')
 
 
     subTrainSetSize = subTrainSet.shape[0]
